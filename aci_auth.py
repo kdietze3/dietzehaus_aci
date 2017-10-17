@@ -1,9 +1,12 @@
+#!/Python27/python
+#Environment Python 2.7 Windows 10 ACI 2.3(1f)
+
 #Simple module for ACI login and logout
 
 from cobra.mit.access import MoDirectory
 from cobra.mit.session import LoginSession
 
-# Suppress HTTP Warnings
+# Suppress HTTPS Warnings
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
